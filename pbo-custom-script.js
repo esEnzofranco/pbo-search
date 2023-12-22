@@ -17,7 +17,7 @@ document.querySelectorAll(".Pbo-select-custom").forEach(function (customSelect) 
         if (event.target.classList.contains("custom-option")) {
             const option = event.target;
             selected.value = option.getAttribute("data-value");
-            selected.innerHTML = option.textContent;
+            selected.innerHTML = option.innerHTML;
             point.value =  option.getAttribute("data-value");
             customSelect.classList.remove("open");
         }
